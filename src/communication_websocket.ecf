@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="communication_websocket" uuid="50C06CD4-01D1-4CCB-A5A0-BFBA0E0CB43D" library_target="communication_websocket">
+	<target name="communication_websocket">
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<capability>
+			<catcall_detection support="none"/>
+			<concurrency support="none"/>
+			<void_safety support="all"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<library name="communication_general" location="$ISE_LIBRARY\contrib/library/communication/general/src/communication_general.ecf" readonly="false"/>		
+		<library name="wsf_standalone_websocket" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/wsf/connector/standalone_websocket.ecf"/>
+		<cluster name="communication_websocket" location="." recursive="true" readonly="true"/>
+	</target>
+</system>
