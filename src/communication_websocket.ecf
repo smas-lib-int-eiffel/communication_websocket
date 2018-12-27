@@ -17,7 +17,7 @@
 			<void_safety support="all"/>
 		</capability>
 		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
-		<library name="communication_general" location="$ISE_LIBRARY\contrib/library/communication/general/src/communication_general.ecf" readonly="false"/>		
+		<library name="communication_general" location="$ISE_LIBRARY\external/library/communication/general/src/communication_general.ecf" readonly="false"/>		
 		<library name="wsf_standalone_websocket" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/wsf/connector/standalone_websocket.ecf"/>
 		<cluster name="communication_websocket" location="." recursive="true" readonly="true"/>
 	</target>
